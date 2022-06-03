@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body {
+    min-height: 100vh;
+}
+h1 {
+    padding: 10px 20px;
+    color: rgba(0, 0, 195, 0.9);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow:0 1px 20px rgba(0, 0, 195, 0.3);
+    text-shadow: 0 3px 5px rgba(0, 0, 195, 0.3);
+}
+.content-box {
+    margin-top: 50px;
+    padding: 5px 20px;
+    min-height: 30vh;
+}
+.content-box > h4 {
+    color: rgba(0, 0, 195, 0.9);
+    text-shadow: 0 3px 5px rgba(0, 0, 195, 0.3);
+}
+.content-box > .notice {
+    font-size: 0.6em;
+    line-height: 1.2em;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 5px;
+    width: fit-content;
+    color: white;
+    background: darkorange;
+    text-shadow: 0 3px 5px rgba(0, 0, 195, 0.3);
+    box-shadow:0 1px 20px rgba(0, 0, 195, 0.3);
+}
+.content-box > .type-sample {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 195, 0.3);
+    background: rgba(0, 0, 195, 0.9);
+    color: white;
+}
+.content-box > .type-box_notice {
+    margin-top: 30px;
+}
+.content-box > .type-sample_input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    resize: vertical;
+    border: none;
+    font-size: 1.1em;
+    white-space: wrap;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 195, 0.3);
+    color: rgba(0, 0, 195, 0.9);
+    outline-color: rgba(0, 0, 195, 0.9);
+    caret-color: darkorange;
+}
+.values-box {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.values-box h5 {
+    color: rgba(0, 0, 195, 0.9);
+    text-shadow: 0 3px 5px rgba(0, 0, 195, 0.3);
+}
+.values-box p {
+    font-size: 1.3em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow:0 1px 20px rgba(0, 0, 195, 0.3);
+    color: darkorange;
+}
+.values-box .timer,
+.values-box .errors,
+.values-box .wpm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.values-box .wpm span {
+    font-size: 0.8em;
+}
+
+.correct {
+    color: rgb(64, 255, 0);
+    transition: all 200ms ease-in-out;
+}
+.wrong {
+    color: rgb(255, 0, 0);
+    transition: all 200ms ease-in-out;
+}
+.wrong-space {
+    border-radius: 2px;
+    background: rgb(255, 0, 0);
+    transition: all 200ms ease-in-out;
+}
